@@ -1,0 +1,409 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: poppins;
+    background-color: rgb(12, 22, 77) ;
+    height: 100vh;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(22, 22, 97);
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    font-size: 1.7rem;
+    position: fixed;
+    top: 0rem;
+    z-index: 2;
+}
+
+.navbar-right ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar-right li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-left{
+    display: flex;
+    gap: 4rem;
+}
+
+.navbar-left .nav-content-2 a{
+    color: white;
+} 
+
+.navbar2-mobile{
+    display: none;
+}
+
+.navbar2-left{
+    display: none;
+}
+.common{
+    padding: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.red{
+    color: #fe0058;
+}
+
+.nav-content-2 .red a{
+    color: #fe0058;
+    text-decoration: none;
+}
+
+.nav-content-2 .red a:hover{
+    text-decoration: underline;
+}
+
+.red-btn{
+    background-color: #fe0058;
+    color: white;
+}
+
+.red-head{
+    color: #fe0058;
+}
+
+.blue-btn{
+    background-color: rgb(33, 33, 102);
+    color: white;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+.flex-box{
+    flex-basis: 40%;
+}
+
+h3{
+    font-size: 2rem;
+    color: white;
+}
+
+p{
+    font-size: 1.5rem;
+    color: #c1c1c1;
+    line-height: 1.8;
+}
+
+button{
+    padding: 2.25rem 4.5rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4rem;
+}
+
+.section-1{
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.section-1 h1{
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 1;
+}
+
+.section-1-btn{
+    display: flex;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.section-2{
+    align-items: start ;
+}
+
+.section-2 button{
+    margin-top: 2rem;
+}
+
+.section-3{
+    background-image: url(./Images/Section-3/Music-bg.webp);
+    background-size: cover;
+    max-width: 125rem;
+    width: 100%;
+    margin: auto;
+    justify-content: start;
+}
+
+.section-3-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    grid-gap: 6rem;
+}
+
+.section-3 h2{
+    margin-bottom: 9rem;
+    color: white;
+}
+
+.section-3-box h3{
+    margin: 2.5rem 0;
+}
+
+.section-3-content{
+    position: relative;
+    z-index: 0;
+}
+
+.section-3 img{
+    max-width: 100%;
+    position: relative;
+    left: 1rem;
+    top: 0.5rem;
+
+}
+
+.section-3-content::before{
+    position: absolute;
+    content: '';
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    left: -1rem;
+    background-color: #fe0058;
+}
+
+.section-4-div, .section-6-div{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 3rem;
+} 
+
+.section-4-photo-div, .section-6-photo-div{
+    padding: 5rem 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    grid-gap: 1rem;        
+}
+
+.img-div figure img{
+    max-width: 100%;
+    border-radius: 2.5rem;
+    display: block;
+    margin: auto;
+}
+
+.img-div figure figcaption{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 1.8rem;
+    font-weight: bold;
+}
+
+.section-5 {
+    gap: 10rem;
+}
+
+.section-5 h2{
+    color: white;
+    line-height: 1.9;
+}
+
+.section-5-right span{
+    font-size: 2.2rem;
+}
+
+.section-5-right p{
+    margin-top: 2rem;
+}
+
+.section-5-left{
+    padding: 5rem;
+    border-radius: 1rem;
+    background-color: #c1c1c144;
+    display: flexbox;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.section-5 button{
+    margin-top: 2rem;
+}
+
+.section-6-photo-div h3, figcaption p{
+    color: black;
+}
+
+.footer-main{
+    justify-content: space-between;
+}
+
+.footer-div h4{
+    font-size: 2rem;
+    color: #fe0058;
+}
+
+.footer-div img{
+    margin-bottom: 2rem;
+}
+
+.fa-brands, .fa-bars{
+    font-size: 2rem;
+    color: white;
+}
+
+.fa-brands{
+    margin-top: 2rem;
+    margin-right: 1rem;   
+}
+
+.fa-brands:hover{
+    color: #fe0058;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-right, .navbar-left{
+        display: none;
+    }
+    .navbar2-mobile{
+        display: block;
+    }
+    .navbar2-left{
+        background-color:  rgb(22, 22, 97);
+        margin-top: 7rem;
+        padding: 2rem;
+    }
+    .navbar2-left ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        
+    }
+    .navbar2-left ul li{
+        list-style: none;
+        margin-bottom: 2rem;
+    }
+    .fa-bars{
+        display: inline-block;
+        color: white;
+        z-index: 2;
+        position: fixed;
+        margin-left: 70rem;
+        font-size: 3rem;
+        margin-top: 1.2rem;
+    }
+    .fa-bars:hover + .navbar2-left{
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+    .common{
+        padding: 3rem;
+    }
+    .fa-bars{
+        display: inline-block;
+        color: white;
+        z-index: 2;
+        position: fixed;
+        margin-left: 70rem;
+        font-size: 3rem;
+        margin-top: 1.2rem;
+    } 
+    .flex-box{
+        flex-basis: 90%; 
+    }
+    .section-3, .section-6, .section-4, .section-5{
+        padding: 6rem;
+    } 
+    .section-1{
+        margin-top: 9rem;
+    }
+    .section-1 button{
+        margin-left: 5rem
+    }
+}
+@media only screen and (max-width: 375px) {
+    .flex-box{
+        flex-basis: 100%;
+    }
+    .navbar2-mobile{
+        display: inline-block;
+    }
+    .navbar2-left{
+        background-color:  rgb(22, 22, 97);
+        margin-top: 7rem;
+        padding: 2rem;
+    }
+    .navbar2-left ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        
+    }
+    .navbar2-left ul li{
+        list-style: none;
+        margin-bottom: 2rem;
+    }
+    .fa-bars{
+        display: inline-block;
+        color: white;
+        z-index: 2;
+        position: fixed;
+        margin-left: 18.8rem;
+        font-size: 2.4rem;
+        margin-top: 3.2rem;
+    }
+    .fa-bars:hover + .navbar2-left{
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+    .common{
+        padding: 3rem;
+    }
+    .section-1-right img{
+        width: 90%;
+    }
+    .section-1-left{
+        width: 80%;
+    }
+    .section-1 .section-1-btn{
+        width: 90%;
+        height: 10%;
+        flex-direction: column;
+        margin-left: -1rem;
+    }
+    .section-4-div, .section-6-div{
+        flex-direction: column;
+    }
+}
